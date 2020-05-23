@@ -1,0 +1,151 @@
+@import 'variables';
+body,
+html,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: initial;
+}
+li {
+    list-style: none;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.top-menu {
+    height: 50px;
+    background: #98d62c;
+    display: flex;
+    align-items: center;
+} 
+.top-menu nav ul {
+    display: flex;
+    justify-content: center;
+    li {
+        margin-right: 10px;
+        color: #000;
+        font-size: 14px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+.middle-menu {
+    margin-top: 80px;
+}
+.middle-menu__container {
+    display: flex;
+    justify-content: space-between;
+}
+.left-menu {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    img {
+        width: 100%;
+    }
+}
+.right-menu {
+    text-align: right;
+    width: 50%;
+}
+.numbers {
+    font-size: 16px;
+    font-weight: 700;
+    li {
+        margin-bottom: 5px;        
+    }
+}
+.search {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 0 15px;
+}
+.search__form {
+    display: flex;
+}
+.search__input {
+    width: 100%;
+    height: $formHeight;
+    border-radius: $formBorderRadius;
+    border: 1px solid #acacac;
+    padding-left: 10px;
+}
+.search__button {
+    width: 70px;
+    background: #fdae2c;
+    height: $formHeight;
+    border-radius: $formBorderRadius;
+    border: 0;
+    color: #fff;
+    margin-left: 10px;
+}
+.bottom-menu {
+    top: 50px;
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px 15px;
+}
+.bottom-menu__schedule {
+    width: 150px;
+}
+.bottom-menu__user,
+.bottom-menu__cart {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+}
+.bottom-menu__user {
+    width: 80px;
+    height: 55px;
+    background: url(https://mandarin-mebel.com.ua/catalog/view/theme/so-mandarin/images/icon-user-g-2x.png) 50% 0 /auto 40px  no-repeat;
+}
+.bottom-menu__cart {
+    width: 100px;
+    height: 55px;
+    background: url(https://mandarin-mebel.com.ua/catalog/view/theme/so-mandarin/images/icon-cart.png) 50% 0 no-repeat;    
+}
+.container-navigation {
+    padding-top: 50px;
+}
+.navigation__button {
+    background: #98d62c;
+    width: 100%;
+    border: 0;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 8px 0;
+    margin-bottom: 5px;
+}
+.navigation__category > a {
+    background: #d5e79c;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    font-size: 18px;
+    color: #000000;
+    text-transform: uppercase;
+}
+.navigation__list {
+    display: none;
+}
